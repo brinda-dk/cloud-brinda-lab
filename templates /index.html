@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expanded HTML Webpage</title>
+</head>
+<body>
 
+    <!-- Header & Navigation -->
+    <header>
+        <h1>My Portfolio &amp; Blog</h1>
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#projects">Projects</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Main Content Area -->
+    <main>
+
+        <!-- About Section with Image -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am learning how to structure webpages using semantic HTML tags.</p>
+            <img src="https://placeholder.com" alt="A placeholder banner image" width="300" height="150">
+        </section>
+
+        <!-- Projects Section with Table -->
+        <section id="projects">
+            <h2>Recent Projects</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Personal Blog</td>
+                        <td>Web Design</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>Weather App</td>
+                        <td>JavaScript</td>
+                        <td>In Progress</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Contact Section with Form -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+                <label for="topic">Topic:</label><br>
+                <select id="topic" name="topic">
+                    <option value="general">General Inquiry</option>
+                    <option value="project">Project Idea</option>
+                </select><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="30" placeholder="Write your message here..."></textarea><br><br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Website. Built with pure HTML.</p>
+    </footer>
+
+</body>
+</html>
