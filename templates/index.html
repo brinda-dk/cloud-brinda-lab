@@ -1,10 +1,236 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Cloud Computing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Welcome to Cloud Computing</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #071b3a, #123c69, #2563a6);
+            color: white;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+        }
+
+        nav h2 {
+            color: #ffffff;
+            font-size: 25px;
+        }
+
+        nav span {
+            color: #60d5ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        /* Main Section */
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .cloud {
+            font-size: 90px;
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #60d5ff;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #d7eaff;
+            max-width: 650px;
+            line-height: 1.7;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 32px;
+            background: #38bdf8;
+            color: #071b3a;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: white;
+            transform: scale(1.05);
+        }
+
+        /* Cards */
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 20px 8% 60px;
+        }
+
+        .card {
+            width: 250px;
+            padding: 30px 20px;
+            text-align: center;
+            background: rgba(255,255,255,0.10);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 18px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.18);
+        }
+
+        .card h2 {
+            font-size: 35px;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            color: #60d5ff;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #d7eaff;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 22px;
+            background: rgba(0,0,0,0.2);
+            color: #d7eaff;
+            font-size: 14px;
+        }
+
+        @media(max-width: 600px) {
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            nav {
+                padding: 18px 5%;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Welcome to Cloud computing</h1>
-    <p>My first Flask application on Azure!</p>
+
+    <nav>
+        <h2>☁ Cloud<span>Space</span></h2>
+        <a href="/">Home</a>
+    </nav>
+
+    <section class="hero">
+
+        <div class="cloud">☁️</div>
+
+        <h1>Welcome to <span>Cloud Computing</span></h1>
+
+        <p>
+            Explore the power of cloud technology!
+            This is my first Python Flask web application,
+            successfully deployed and hosted using
+            Microsoft Azure App Service.
+        </p>
+
+        <a href="#services" class="button">
+            Explore Cloud Technology
+        </a>
+
+    </section>
+
+    <section class="cards" id="services">
+
+        <div class="card">
+            <h2>☁️</h2>
+            <h3>Cloud Computing</h3>
+            <p>
+                Access computing resources and services
+                over the internet anytime, anywhere.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>🐍</h2>
+            <h3>Python Flask</h3>
+            <p>
+                A lightweight Python framework used
+                to develop dynamic web applications.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>🚀</h2>
+            <h3>Microsoft Azure</h3>
+            <p>
+                Deploy, host and manage web applications
+                using Microsoft's cloud platform.
+            </p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 CloudSpace | Built with Python Flask & Microsoft Azure</p>
+        <p>My First Cloud Deployment Project 🚀</p>
+    </footer>
+
 </body>
 </html>
